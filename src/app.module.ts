@@ -13,7 +13,7 @@ import { SeedModule } from './seed/seed.module';
   imports: [
 
     ServeStaticModule.forRoot({
-      rootPath: join(__dirname,'..','public'),
+      rootPath: join(__dirname,'..','public/Pagina Web'),
       }),
 
     ConfigModule.forRoot(),

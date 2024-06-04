@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat de Atención al Cliente</title>
+    <link rel="stylesheet" href="stylessl.css">
+</head>
+<body>
+    <nav class="navbar">
+        <a href="index.html"><b></b>Inicio</a>
+        <a href="Opciones.html"><b></b>Categoria</a>
+        <a href="#"><b></b>Soporte</a>
+        <a href="Login.html"><b></b>Iniciar sesión</a>
+    </nav>
+
+    <div class="form-container" id="form-container">
+        <div class="form-header">
+            <h2>Ingresa a nuestro canal de chat</h2>
+        </div>
+        <form id="chat-form">
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="tipo-id">Tipo de Identificación: <span>*</span></label>
+                    <select id="tipo-id" required>
+                        <option value="">Seleccione una opción</option>
+                        <option value="dni">DNI</option>
+                        <option value="passport">Pasaporte</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="numero-id">Número de Identificación: <span>*</span></label>
+                    <input type="text" id="numero-id" required>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="nombres">Nombres: <span>*</span></label>
+                    <input type="text" id="nombres" required>
+                </div>
+                <div class="form-group">
+                    <label for="apellidos">Apellidos: <span>*</span></label>
+                    <input type="text" id="apellidos" required>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="email">Email: <span>*</span></label>
+                    <input type="email" id="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="telefono">Teléfono: <span>*</span></label>
+                    <input type="tel" id="telefono" required>
+                </div>
+            </div>
+            <div class="form-row terms-row">
+                <div class="form-group">
+                    <input type="checkbox" id="privacy-policy" required>
+                    <label for="privacy-policy">Acepto la <a href="#">política de privacidad y uso de datos personales</a></label>
+                </div>
+            </div>
+            <div class="form-footer">
+                <button type="submit">Iniciar Chat</button>
+            </div>
+        </form>
+    </div>
+
+    <div class="chat-container" id="chat-container" style="display:none;">
+        <div class="chat-header">
+            <h2>Chat de Atención al Cliente</h2>
+        </div>
+        <div class="chat-messages" id="chat-messages">
+        </div>
+        <div class="chat-input">
+            <input type="text" id="chat-input" placeholder="Escribe un mensaje...">
+            <button id="send-button">Enviar</button>
+        </div>
+    </div>
+
+   
+</body>
+</html>

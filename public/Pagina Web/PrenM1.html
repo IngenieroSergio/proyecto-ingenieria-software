@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pagina Producto</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <div class="head">
+        <div class="logo">
+            <h1>Catalogo</h1>
+        </div>
+        <nav class="navbar">
+            <a href="index.html"><b></b>Inicio</a>
+            <a href="Opciones.html"><b></b>Categoria</a>
+            <a href="chat.html"><b></b>Soporte</a>
+            <a href="Login.html"><b></b>Iniciar sesion</a>
+        </nav>
+    </div>
+    <div class="container-title"></div>
+
+    <main>
+        <div class="container-img" id="container-imgr1v">
+            <img src=https://www.uppersidecol.com/wp-content/uploads/2024/01/628A8896-min-416x624.jpg
+                alt="imagen-producto" />
+        </div>
+        <div class="container-info-product">
+            <div class="container-price">
+                <span><b>Absolute Cargo- $ 150.000 </b></span>
+                <i class="fa-solid fa-angle-right"></i>
+            </div>
+
+            <div class="container-details-product">
+                <div class="form-group">
+                    <label for="colour">Color</label>
+                    <select name="colourr15" id="colourr1v" onchange="cambiar_imagenr1v();">
+                        <option disabled selected value="">
+                            Escoge una opción
+                        </option>
+                        <option value="gris">Gris</option>
+                        <option value="azul">Azul</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="size">Talla</label>
+                    <select name="size" id="size">
+                        <option disabled selected value="">
+                            Escoge una opción
+                        </option>
+                        <option value="40">S</option>
+
+                    </select>
+                </div>
+                <button class="btn-clean">Limpiar</button>
+            </div>
+
+            <div class="container-add-cart">
+                <div class="container-quantity">
+                    <input type="number" placeholder="1" value="1" min="1" class="input-quantity" />
+                    <div class="btn-increment-decrement">
+                        <i class="fa-solid fa-chevron-up" id="increment"></i>
+                        <i class="fa-solid fa-chevron-down" id="decrement"></i>
+                    </div>
+                </div>
+                <button class="btn-add-to-cart">
+                    <i class="fa-solid fa-plus"></i>
+                    Añadir al carrito
+                </button>
+            </div>
+
+            <div class="container-description">
+                <div class="title-description">
+                    <h4>Descripción</h4>
+                    <i class="fa-solid fa-chevron-down"></i>
+                </div>
+                <div class="text-description">
+                    <p>
+                        Este pantalón cargo es la elección perfecta para aquellos que buscan una combinación de funcionalidad y elegancia.
+                         Confeccionado con mezclilla y algodón de alta calidad, ofrece una sensación suave y cómoda que te acompañará a 
+                         lo largo del día. Su color gris versátil añade un toque moderno y urbano a tu estilo.
+                         <p>
+                            Los bolsillos amplios no solo son un elemento práctico, sino también un detalle distintivo que agrega carácter a la
+                             prenda. Con toques de botones plateados, estos bolsillos se convierten en un acento elegante que refleja una estética
+                              contemporánea.. Este pantalón cargo no solo es una pieza de moda, sino también una muestra de estilo funcional.
+                        </p>
+                    </p>
+                </div>
+            </div>
+
+            <div class="container-additional-information">
+                <div class="title-additional-information">
+                    <h4>Información adicional</h4>
+                    <i class="fa-solid fa-chevron-down"></i>
+                </div>
+                <div class="text-additional-information hidden">
+                    <p>Tejido: No-Elástico
+                        Material: Mezclilla
+                        Composición: 100% Algodón
+                        Instrucciones de Cuidado: Lavadora, no limpiar en seco
+                    </p>
+                </div>
+            </div>
+
+            <div class="container-reviews">
+                <div class="title-reviews">
+                    <h4>Reseñas</h4>
+                    <i class="fa-solid fa-chevron-down"></i>
+                </div>
+                <div class="text-reviews hidden">
+                    <p>-----------</p>
+                </div>
+            </div>
+
+            <div class="container-social">
+                <span>Compartir</span>
+                <div class="container-buttons-social">
+                    <a href="#"><i class="fa-solid fa-envelope"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <section class="container-related-products">
+        <h2>Productos Relacionados</h2>
+        <div class="card-list-products">
+            <div class="card">
+                <div class="card-img">
+                    <a href="PrenM2.html">
+                        <img src="https://www.uppersidecol.com/wp-content/uploads/2024/01/628A9392-min-416x624.jpg"
+                            alt="producto-1" />
+                    </a>
+                </div>
+                <div class="info-card">
+                    <div class="text-product">
+                        <h3>Sparkle Skirt</h3>
+                        <p class="category">Ropa, Mujeres</p>
+                    </div>
+                    <div class="price">$ 320.000</div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-img">
+                    <a href="PrenM3.html">
+                    <img src="https://www.uppersidecol.com/wp-content/uploads/2024/01/ALBA8383-416x624.jpg"
+                        alt="producto-3" />
+                    </a>
+                </div>
+                <div class="info-card">
+                    <div class="text-product">
+                        <h3>Prophet Cargo</h3>
+                        <p class="category">Ropa, Mujeres</p>
+                    </div>
+                    <div class="price">$ 240.000</div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-img">
+                    <a href="PrenM4.html">
+                    <img src="https://www.uppersidecol.com/wp-content/uploads/2024/01/ALBA8270-416x624.jpg"
+                        alt="producto-2" />
+                    </a>
+                </div>
+                <div class="info-card">
+                    <div class="text-product">
+                        <h3>Killer Brown Corset </h3>
+                        <p class="category">Ropa, Mujeres</p>
+                    </div>
+                    <div class="price">$ 150.000</div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-img">
+                    <a href="PrenM5.html">
+                    <img src="https://www.uppersidecol.com/wp-content/uploads/2024/01/628A9424-1-416x624.jpg"
+                        alt="producto-3" />
+                    </a>
+                </div>
+                <div class="info-card">
+                    <div class="text-product">
+                        <h3>Future Corset</h3>
+                        <p class="category">Ropa, Mujeres</p>
+                    </div>
+                    <div class="price">$ 125.000</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   
+
+    <script src="https://kit.fontawesome.com/81581fb069.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
